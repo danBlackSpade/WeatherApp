@@ -19,7 +19,7 @@ export default function WeatherApp() {
       return 0;
     }
     
-    const url = `${process.env.REACT_APP_API_URL}/weather?q=${element[0].value}&units=Metric&appid=${process.env.REACT_APP_API_KEY}`
+    const url = `${REACT_APP_API_URL}/weather?q=${element[0].value}&units=Metric&appid=${REACT_APP_API_KEY}`
 
     let response = await fetch(url);
     let data = await response.json();
